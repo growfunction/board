@@ -1,5 +1,5 @@
 # board
 board
 
-1 --- npm i
-2 --- npm start
+npm i 
+npm start
