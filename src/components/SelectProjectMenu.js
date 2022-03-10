@@ -4,7 +4,6 @@ import { NavLink, Link } from "react-router-dom";
 const SelectProjectMenu = (props) => {
   const { name, subMenus, onClick, to } = props;
   const [expand, setExpand] = useState(false);
-
   return (
     <li onClick={onClick}>
       <Link
@@ -12,7 +11,6 @@ const SelectProjectMenu = (props) => {
         to={to}
         className={`menu-item`}
       >
-  
         <p className="name" onClick={() => setExpand(!expand)}>{name}
          <div className="menu-icon">
            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
@@ -20,7 +18,6 @@ const SelectProjectMenu = (props) => {
           </svg>
         </div>
          </p> 
-     
       </Link>
       {subMenus && subMenus.length > 0 && expand ? (
         <ul className={`sub-menu`}>
